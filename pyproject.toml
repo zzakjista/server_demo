@@ -6,20 +6,24 @@ authors = ["zzakjista <gnsdl09@kookmin.ac.kr>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
 requests = "2.31.0"
 pandas = "2.2.2"
 pyarrow = "16.0.0"
 numpy = "1.26.4"
 
-flask =
+
 fastapi = "0.111.0"
 pydantic = "2.7.1"
 uvicorn = "0.29.0"
 PyJWT = "2.8.0"
 aiofiles = "23.2.1"
 psutil = "5.9.8"
+scipy = "^1.13.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
